@@ -113,8 +113,6 @@ if [[ $(git log -1) == *'[ci fpe]'* ]];then
     export MESA_FPE_CHECKS_ON=1
 fi
 
-rm "${MESA_DIR}"/data/*/cache/*
-
 # if USE_MESA_TEST is set, use mesa_test gem; pick its options via MESA_TEST_OPTIONS
 # otherwise, use built-in each_test_run script
 export USE_MESA_TEST=t

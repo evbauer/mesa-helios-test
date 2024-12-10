@@ -131,7 +131,6 @@ if [[ $(git log -1) == *'[ci fpe]'* ]];then
     export MESA_FPE_CHECKS_ON=1
 fi
 
-rm "${MESA_DIR}"/data/*/cache/*
 # if ci skip, then exit and don't submit any further tests
 if [[ $skip_tests -eq 1 ]];then
     rm -rf $MESA_DIR
